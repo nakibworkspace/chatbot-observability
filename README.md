@@ -100,6 +100,20 @@ npx langfuse-cli --env .env api traces get <trace-id>
 npx langfuse-cli --env .env api prompts list
 ```
 
+
+### From Langfuse UI
+#### All Traces
+
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img6.png?raw=true)
+
+#### Trace View
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img7.png?raw=true)
+
+
+#### Log View
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img8.png?raw=true)
+
+
 ### History management
 
 The chatbot maintains a `history` list that grows with each turn:
