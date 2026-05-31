@@ -48,7 +48,7 @@ python chatbot.py
 | `LANGFUSE_SECRET_KEY` | Langfuse secret key |
 | `LANGFUSE_BASE_URL` | Langfuse host URL (e.g. `https://cloud.langfuse.com`) |
 
----
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img1.png?raw=true)
 
 ## Langfuse Integration
 
@@ -126,6 +126,8 @@ Each `build_messages` call assembles `[system_prompt, ...history, current_user_m
 npx skills add langfuse/skills --skill "langfuse"
 ```
 
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img2.png?raw=true)
+
 This installs the skill to `.agents/skills/langfuse/`. Copy it to `.puku-cli/skills/langfuse/` for Puku's alternative convention:
 
 ```bash
@@ -136,15 +138,17 @@ cp -r .agents/skills/langfuse .puku-cli/skills/langfuse
 
 Ask questions in natural language. Puku will read the relevant reference guide and execute Langfuse CLI commands via `npx langfuse-cli`. Examples:
 
-> "Show me the instrumentation reference"
-
 > "List my last 10 traces"
+
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img3.png?raw=true)
 
 > "Get details of trace abc123..."
 
-> "How do I add Langfuse tracing to a new function?"
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img4.png?raw=true)
 
-> "Explain score calibration"
+> "Analyze my recent error traces"
+
+![img1](https://github.com/nakibworkspace/chatbot-observability/blob/main/assets/img5.png?raw=true)
 
 ### Skill structure
 
